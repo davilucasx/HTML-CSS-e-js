@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <title>MTW - login</title>
+    
+</head>
+<body>
+    <main id="container">
+        <div class="text">
+            <h1 class="page-title">MTW</h1>
+            <h2 class="sub-title">login and get redirected</h2>
+        </div>
+        <form id="login_form">
+
+            <div id="form_header">
+                <h1>Login</h1>
+            </div>
+            <div id="inputs">
+                <div class="input-box">
+                    <label for="email">
+                        E-mail
+                        <div class="input-field">
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </label>
+                </div>
+                
+                <div class="input-box">
+                    <label for="password">
+                        Password
+                        <div class="input-field">
+                            <input type="password" id="password" name="password">  
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <button class="animation" type="submit" onclick="validar(); return false" id="login_button">
+                Login
+            </button>
+            <a class="animation" id="sign_up" href="./cadastro.html">Sign up</a>
+        </form>
+    </main>
+</body>
+</html>
